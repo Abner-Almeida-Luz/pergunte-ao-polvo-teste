@@ -1,0 +1,66 @@
+
+.escopo{
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: blue;
+  align-items: center;
+  justify-content: center;
+}
+
+#links{
+  display: flex;
+  height: 10vh;
+  width: 60vw;
+  background-color: gray;
+  align-items: center;
+  justify-content: center;
+  border-radius: calc(1vh + 1vw);
+}
+
+.links{
+  height: 5vh;
+  width: 15vw;
+  margin: 0vh 1vw;
+}
+
+#body-polvo{
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#escopo-polvo{
+  display: flex;
+  padding: 2vh 5vw;
+  height: 50vh;
+  width: 50vw;
+  background-color: gray;
+  flex-direction: column;
+  border-radius: calc(1vh + 1vw);
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  height: 30vh;
+}
+
+.inputs{
+  background-color: aliceblue;
+  background-image: hidden;
+  color: black;
+  height: 3vh;
+  width: 20vw;
+  margin-right: 1vw;
+}
+
+#button{
+  height: 3vh;
+  width: 20vw;
+  margin-right: 1vw;
+}
