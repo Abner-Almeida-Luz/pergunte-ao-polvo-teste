@@ -1,11 +1,12 @@
 
-.escopo{
+.body{
   display: flex;
   height: 100vh;
   width: 100vw;
   background-color: blue;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 #links{
@@ -24,17 +25,7 @@
   margin: 0vh 1vw;
 }
 
-#body-polvo{
-  display: flex;
-  height: 100vh;
-  width: 100vw;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-}
-
-#escopo-polvo{
+.container{
   display: flex;
   padding: 2vh 5vw;
   height: 50vh;
@@ -47,10 +38,11 @@
 }
 
 img {
+  width: 50vw;
   height: 30vh;
 }
 
-.inputs{
+input{
   background-color: aliceblue;
   background-image: hidden;
   color: black;
@@ -59,8 +51,37 @@ img {
   margin-right: 1vw;
 }
 
+p {
+  color: white;
+  font-size: 2vh;
+  margin: 0.5vh 0;
+}
+
 #button{
   height: 3vh;
   width: 20vw;
   margin-right: 1vw;
+}
+
+#body-portifolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fimg.freepik.com%2Fvetores-gratis%2Flinhas-pretas-abstratas-fundo-geometrico_677411-2748.jpg&sp=1749573003T3e0573fd610444556e8a9bb9e9635d35d3c701d9eb4b15baf6b54cdd316e4e27');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+#container-portifolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 60vw;
+  height: 60vh;
+  padding: 2vh 5vw;
+  border-radius: calc(1vh + 1vw);
 }

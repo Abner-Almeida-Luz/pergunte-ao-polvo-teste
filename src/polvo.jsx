@@ -7,12 +7,15 @@ function Polvo() {
 
   function handleClick(input1, input2) {
     const result = Math.random() < 0.5 ? input1 : input2;
+    document.getElementById("input1").value = "";
+    document.getElementById("input2").value = "";
     setChoose(result);
+
   }
 
   return (
-    <body className="body" id='body-polvo'>
-      <div className="escopo" id='escopo-polvo'>
+    <div className="body">
+      <div className="container" id='container-polvo'>
           <img src={polvo} alt="" id="img"/>
           <br />
 
@@ -23,7 +26,7 @@ function Polvo() {
            <button 
             id='button' 
             onClick={() => handleClick(
-              document.getElementById("input1").value, 
+              document.getElementById("input1").value,
               document.getElementById("input2").value
             )}
           >
@@ -32,7 +35,7 @@ function Polvo() {
           
           <p id='res'>O valor escolhido é {choose}</p>
       </div>
-    </body>
+    </div>
   );
 }
 

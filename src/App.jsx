@@ -5,22 +5,23 @@ import { Link } from "react-router-dom";
 function App() {
     
   return (
-     <div className='escopo' id='escopo-app'>
+    <div className="body">
+      <div className='escopo' id='escopo-app'>
         <header>
-        <main>
-        <Outlet /> {}
-        </main>
-        <div id="links">
-        Navegue entre as partes do site <br /> 
-        <Link to={"/polvo"}>
-        <button className='links'>Pergunte ao polvo</button>
-        </Link>
-        <Link to={"/calculadora"}>
-        <button className='links'>Calculadora</button>
-        </Link>
-        </div>
+          <div id="links">
+            Navegue entre as partes do site <br />
+            <Link to={"/portifolio"}>
+              <button className='links'>Portfólio</button>
+            </Link>
+            <Link to={"/polvo"}>
+              <button className='links'>Pergunte ao polvo</button>
+            </Link>
+          </div>
         </header>
-      
+        <main>
+          <Outlet />
+        </main>
+      </div>
     </div>
   );
 };
